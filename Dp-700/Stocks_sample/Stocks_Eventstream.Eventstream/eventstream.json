@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "id": "b4d29fb0-dfc3-4da1-93f4-01152fec823f",
+      "name": "Sp500Stocks",
+      "type": "SampleData",
+      "properties": {
+        "type": "SP500Stocks"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "b67daa8d-a414-4ca1-b4e1-003a1d186f6c",
+      "name": "58291142-afbe-42be-96dc-24a0416b23aa",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "DirectIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "d75ad7c8-1a6f-87ba-44ba-1bbd549e1b2a",
+        "tableName": "Stocks",
+        "connectionName": "Stocks_DC_data_connection",
+        "mappingRuleName": "Stocks_Mapping"
+      },
+      "inputNodes": [
+        {
+          "name": "Stocks_Eventstream-stream"
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "4ec871f2-d2c4-43da-b287-056338d81361",
+      "name": "Stocks_Eventstream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": []
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
