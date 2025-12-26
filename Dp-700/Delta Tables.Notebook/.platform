@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Notebook",
-    "displayName": "Spark",
+    "displayName": "Delta Tables",
     "description": "New notebook"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "07557b29-226b-8687-432e-47bd2697ded0"
+    "logicalId": "65ce8641-c8b2-b1b0-44dd-e103d1234ee1"
   }
 }
